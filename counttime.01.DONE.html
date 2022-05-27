@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+            width: 30%;
+            height:80%;
+            background-color: white;
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .main{
+            width:100%;
+            height:20%;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            flex-direction: column;
+        }
+        .garchig{
+            width:100%;
+            height:40%;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+            font-size:30px;
+        }
+        .time{
+            width:100%;
+            height:60%;
+            font-size:40px;
+            font-weight: 800;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttonuud{
+            width:100%;
+            height:10%;
+            display:flex;
+        }
+        .holdoh1{
+            width:33%;
+            height:100%;
+        }
+        .startstop{
+            width:36%;
+            height:100%;
+            position:relative;
+        }
+        .holdoh2{
+            width:100%;
+            height:100%;
+            position: absolute;
+            z-index: 1;
+        }
+        .holdoh3{
+            width:100%;
+            height:100%;
+            position: absolute;
+            font-size:30px;
+        }
+        .holdoh4{
+            width:33%;
+            height:100%;
+        }
+        button{
+            width:100%;
+            height:100%;
+            border:solid 1px black;
+        }
+        .lap{
+            width:100%;
+            height:70%;
+            display:flex;
+            flex-direction: column;
+        }
+        .item{
+            width:100%;
+            height:11%;
+            display:flex;
+        }
+        .daraaa{
+            width:20%;
+            height:100%;
+            background-color:burlywood;
+        }
+        .daraa{
+            width:80%;
+            height:90%;
+            border-bottom: solid 6px burlywood;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size:30px;
+            font-weight: 500;
+        }
+        h4{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="garchig">
+                <h1>Stop Watch</h1>
+            </div>
+            <div class="time" id="time">
+                <p3 id="p3">00</p3>
+                <p4 id="p4">:</p4>
+                <p5 id="p5">00</p5>
+                <p6 id="p6">:</p6>
+                <p7 id="p7">00</p7>
+            </div>
+        </div>
+        <div class="buttonuud">
+            <div class="holdoh1" id="holdoh1">
+                <button onclick="reset()">Reset</button>
+                </div>
+            <div class="startstop" id="startstop">
+                <div class="holdoh2" id="holdoh2">
+                    <button onclick="ehlel()">Start</button>
+                </div>
+                <div class="holdoh3" id="holdoh3">
+                    <button onclick="zogsoh()">Stop</button>
+                </div>
+            </div>
+            <div class="holdoh4">
+                <button id="lapdisable" onclick="lap()">Lap</button>
+            </div>
+        </div>
+        <div class="lap" id="lap">
+            <div class="item lap1">
+                <div class="daraaa daraa1" id="daraalal1">
+                    <h4>1.</h4>
+                </div>
+                <div class="daraa daraa2" id="daraalal2">
+                    <p10 id="p10"></p10>
+                </div>
+            </div>
+            <div class="item lap2">
+                <div class="daraaa daraa3" id="daraalal3">
+                    <h4>2.</h4>
+                </div>
+                <div class="daraa daraa4" id="daraalal4">
+                    <p11 id="p11"></p11>
+                </div>
+            </div>
+            <div class="item lap3">
+                <div class="daraaa daraa5" id="daraalal5">
+                    <h4>3.</h4>
+                </div>
+                <div class="daraa daraa6" id="daraalal6">
+                    <p12 id="p12"></p12>
+                </div>
+            </div>
+            <div class="item lap4">
+                <div class="daraaa daraa7" id="daraalal7">
+                    <h4>4.</h4>
+                </div>
+                <div class="daraa daraa8" id="daraalal8">
+                    <p13 id="p13"></p13>
+                </div>
+            </div>
+            <div class="item lap5">
+                <div class="daraaa daraa9" id="daraalal9">
+                    <h4>5.</h4>
+                </div>
+                <div class="daraa daraa10" id="daraalal10">
+                    <p14 id="p14"></p14>
+                </div>
+            </div>
+            <div class="item lap6">
+                <div class="daraaa daraa11" id="daraalal11">
+                    <h4>6.</h4>
+                </div>
+                <div class="daraa daraa12" id="daraalal12">
+                    <p15 id="p15"></p15>
+                </div>
+            </div>
+            <div class="item lap7">
+                <div class="daraaa daraa13" id="daraalal13">
+                    <h4>7.</h4>
+                </div>
+                <div class="daraa daraa14" id="daraalal14">
+                    <p16 id="p16"></p16>
+                </div>
+            </div>
+            <div class="item lap8">
+                <div class="daraaa daraa15" id="daraalal15">
+                    <h4>8.</h4>
+                </div>
+                <div class="daraa daraa16" id="daraalal16">
+                    <p17 id="p17"></p17>
+                </div>
+            </div>
+            <div class="item lap9">
+                <div class="daraaa daraa17" id="daraalal17">
+                    <h4>9.</h4>
+                </div>
+                <div class="daraa daraa18" id="daraalal18">
+                    <p18 id="p18"></p18>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+    <script>
+        var tinterval = 0;
+        lapdisable.setAttribute("disabled", "disabled")
+        ehlel = function(){
+            tinterval = setInterval(ehleh, 18);
+            holdoh2.style.visibility = "hidden"
+            lapdisable.removeAttribute("disabled")
+        }
+        ehleh =function(){
+            p7.innerHTML++
+            if(p7.innerHTML == 60){
+                p5.innerHTML++
+                p7.innerHTML = 0
+            }
+            if(p5.innerHTML == 60){
+                p3.innerHTML++
+                p5.innerHTML = 0
+            }
+        }
+        zogsoh = function(){
+            clearInterval(tinterval)
+            holdoh2.style.visibility = "visible"
+            return;
+            holdoh3.style.visibility = "hidden"
+        }
+        reset = function(){
+            clearInterval(tinterval)
+            lapdisable.setAttribute("disabled", "disabled")
+            holdoh2.style.visibility = "visible"
+            p3.innerHTML = "00";
+            p5.innerHTML = "00"
+            p7.innerHTML = "00"
+            x = 0
+            daraalal1.style.visibility = "hidden"
+            daraalal2.style.visibility = "hidden"
+            daraalal3.style.visibility = "hidden"
+            daraalal4.style.visibility = "hidden"
+            daraalal5.style.visibility = "hidden"
+            daraalal6.style.visibility = "hidden"
+            daraalal7.style.visibility = "hidden"
+            daraalal8.style.visibility = "hidden"
+            daraalal9.style.visibility = "hidden"
+            daraalal10.style.visibility = "hidden"
+            daraalal11.style.visibility = "hidden"
+            daraalal12.style.visibility = "hidden"
+            daraalal13.style.visibility = "hidden"
+            daraalal14.style.visibility = "hidden"
+            daraalal15.style.visibility = "hidden"
+            daraalal16.style.visibility = "hidden"
+            daraalal17.style.visibility = "hidden"
+            daraalal18.style.visibility = "hidden"
+        }   
+        daraalal1.style.visibility = "hidden"
+        daraalal2.style.visibility = "hidden"
+        daraalal3.style.visibility = "hidden"
+        daraalal4.style.visibility = "hidden"
+        daraalal5.style.visibility = "hidden"
+        daraalal6.style.visibility = "hidden"
+        daraalal7.style.visibility = "hidden"
+        daraalal8.style.visibility = "hidden"
+        daraalal9.style.visibility = "hidden"
+        daraalal10.style.visibility = "hidden"
+        daraalal11.style.visibility = "hidden"
+        daraalal12.style.visibility = "hidden"
+        daraalal13.style.visibility = "hidden"
+        daraalal14.style.visibility = "hidden"
+        daraalal15.style.visibility = "hidden"
+        daraalal16.style.visibility = "hidden"
+        daraalal17.style.visibility = "hidden"
+        daraalal18.style.visibility = "hidden"
+        x = 0
+        lap = function(){
+           if(x === 0){
+                daraalal1.style.visibility = "visible";
+                daraalal2.style.visibility = "visible";
+                p10.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=1
+           }
+           else if(x === 1){
+                daraalal3.style.visibility = "visible";
+                daraalal4.style.visibility = "visible";
+                p11.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=2
+           }
+           else if(x === 2){
+                daraalal5.style.visibility = "visible";
+                daraalal6.style.visibility = "visible";
+                p12.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=3
+           }
+           else if(x === 3){
+                daraalal7.style.visibility = "visible";
+                daraalal8.style.visibility = "visible";
+                p13.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=4
+           }
+           else if(x === 4){
+                daraalal9.style.visibility = "visible";
+                daraalal10.style.visibility = "visible";
+                p14.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=5
+           }
+           else if(x === 5){
+                daraalal11.style.visibility = "visible";
+                daraalal12.style.visibility = "visible";
+                p15.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=6
+           }
+           else if(x === 6){
+                daraalal13.style.visibility = "visible";
+                daraalal14.style.visibility = "visible";
+                p16.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=7
+           }
+           else if(x === 7){
+                daraalal15.style.visibility = "visible";
+                daraalal16.style.visibility = "visible";
+                p17.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=8
+           }
+           else if(x === 8){
+                daraalal17.style.visibility = "visible";
+                daraalal18.style.visibility = "visible";
+                p18.innerHTML = p3.innerHTML + p4.innerHTML + p5.innerHTML + p6.innerHTML + p7.innerHTML;
+                x=9
+           }
+        } 
+
+    </script>
+</body>
+</html>
