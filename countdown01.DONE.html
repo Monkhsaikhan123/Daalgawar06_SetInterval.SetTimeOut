@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100%;
+            height:100vh;
+            background-color:white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .main{
+            width:40%;
+            height:40%;
+            background-color:aquamarine;
+            border-radius: 5%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+        }
+        .time{
+            width:40%;
+            height:40%;
+            background-color:antiquewhite;
+            border-radius:5%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="main">
+            <div class="input">
+                <input id="input">
+            </div>
+            <div class="input">
+                <p1 id="p1">Seconds</p1>
+            </div>
+            <div class="input">
+                <button onclick="set()">Set time</button>
+            </div>
+            <div class="input">
+                <button id="button" onclick="start()">Start</button>
+            </div>
+        </div>
+        <div class="time" id="time">
+            <div class="p2">
+                <p2 id="tsag">00</p2>
+            </div>
+            <div class="p3">
+                <p3>:</p3>
+            </div>
+            <div class="p4">
+                <p4 id="minut">00</p4>
+            </div>
+            <div class="p5">
+                <p5>:</p5>
+            </div>
+            <div class="p6">
+                
+                <p6 id="second">00</p6>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tinterval = 0
+        button.setAttribute("disabled", "disabled")
+     /*    time.style.visibility = "hidden" */
+ start = function(){
+        tinterval = setInterval(ehleh , 20)
+     /*    container.style.visibility = "hidden" 
+        time.style.visibility = "visible" */
+        button.setAttribute("disabled", "disabled") 
+     
+ }
+ ehleh = function(){
+     second.innerHTML --
+    if(second.innerHTML < 0){
+         second.innerHTML = 0
+       /*   time.style.visibility = "hidden" 
+         container.style.visibility = "visible"   */
+        }
+        if(tsag.innerHTML == 1){
+            minut.innerHTML = 60
+
+        }
+        if(minut.innerHTML == 1 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 0
+            }  
+        if(minut.innerHTML == 2 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 1
+            }  
+        if(minut.innerHTML == 3 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 2
+            } 
+       
+        if(minut.innerHTML == 4 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 3
+        } 
+        if(minut.innerHTML == 5 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 4
+        }  
+        if(minut.innerHTML == 6 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 5
+        }
+        if(minut.innerHTML == 7 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 6
+        }
+        if(minut.innerHTML == 8 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 7
+        }
+        if(minut.innerHTML == 9 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 8
+        }
+        if(minut.innerHTML == 10 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 9
+        }
+        if(minut.innerHTML == 11 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 10
+        }
+        if(minut.innerHTML == 12 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 11
+        }
+        if(minut.innerHTML == 13 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 12
+        }
+        if(minut.innerHTML == 14 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 13
+        }
+        if(minut.innerHTML == 15 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 14
+        }
+        if(minut.innerHTML == 16 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 15
+        }
+        if(minut.innerHTML == 17 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 16
+        }
+        if(minut.innerHTML == 18 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 17
+        }
+        if(minut.innerHTML == 19 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 18
+        }
+        if(minut.innerHTML == 20 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 19
+        }
+        if(minut.innerHTML == 21 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 20
+        }
+        if(minut.innerHTML == 22 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 21
+        }
+        if(minut.innerHTML == 23 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 22
+        }
+        if(minut.innerHTML == 24 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 23
+        }
+        if(minut.innerHTML == 25 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 24
+        }
+        if(minut.innerHTML == 26 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 25
+        }
+        if(minut.innerHTML == 27 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 26
+        }
+        if(minut.innerHTML == 28 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 27
+        }
+        if(minut.innerHTML == 29 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 28
+        }
+        if(minut.innerHTML == 30 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 29
+        }
+        if(minut.innerHTML == 31 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 30
+        }
+        if(minut.innerHTML == 32 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 31
+        }
+        if(minut.innerHTML == 33 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 32
+        }
+        if(minut.innerHTML == 34 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 33
+        }
+        if(minut.innerHTML == 35 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 34
+        }
+        if(minut.innerHTML == 36 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 35
+        }
+        if(minut.innerHTML == 37 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 36
+        }
+        if(minut.innerHTML == 38 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 37
+        }
+        if(minut.innerHTML == 39 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 38
+        }
+        if(minut.innerHTML == 40 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 39
+        }
+        if(minut.innerHTML == 41 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 40
+        }
+        if(minut.innerHTML == 42 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 41
+        }
+        if(minut.innerHTML == 43 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 42
+        }
+        if(minut.innerHTML == 44 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 43
+        }
+        if(minut.innerHTML == 45 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 44
+        }
+        if(minut.innerHTML == 46 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 45
+        }
+        if(minut.innerHTML == 47 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 46
+        }
+        if(minut.innerHTML == 48 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 47
+        }
+        if(minut.innerHTML == 49 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 48
+        }
+        if(minut.innerHTML == 50 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 49
+        }
+        if(minut.innerHTML == 51 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 50
+        }
+        if(minut.innerHTML == 52 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 51
+        }
+        if(minut.innerHTML == 53 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 52
+        }
+        if(minut.innerHTML == 54 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 53
+        }
+        if(minut.innerHTML == 55 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 54
+        }
+        if(minut.innerHTML == 56 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 55
+        }
+        if(minut.innerHTML == 57 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 56
+        }
+        if(minut.innerHTML == 58 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 57
+        }
+        if(minut.innerHTML == 59 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 58
+        }
+        if(minut.innerHTML == 60 &&
+            second.innerHTML == 0){
+            second.innerHTML = 60
+            minut.innerHTML = 59
+        }
+ }
+
+set = function(){
+    
+    clearInterval(tinterval)
+    button.removeAttribute("disabled")
+    second.innerHTML = input.value
+  
+    
+    if(input.value >= 60){
+            second.innerHTML =  input.value - 60
+            minut.innerHTML = 1
+        }
+        if(input.value >= 120){
+            second.innerHTML =  input.value - 120
+            minut.innerHTML = 2
+        }
+        if(input.value > 180){
+            second.innerHTML =  input.value - 180
+            minut.innerHTML = 3
+        }
+        if(input.value > 240){
+            second.innerHTML =  input.value - 240
+            minut.innerHTML = 4
+        }
+        if(input.value > 300){
+            second.innerHTML =  input.value - 300
+            minut.innerHTML = 5
+        }
+        if(input.value > 360){
+            second.innerHTML =  input.value - 360
+            minut.innerHTML = 6
+        }
+        if(input.value > 420){
+            second.innerHTML =  input.value - 420
+            minut.innerHTML = 7
+        }
+        if(input.value > 480){
+            second.innerHTML =  input.value - 480
+            minut.innerHTML = 8
+        }
+        if(input.value > 540){
+            second.innerHTML =  input.value - 540
+            minut.innerHTML = 9
+        }
+        if(input.value > 600){
+            second.innerHTML =  input.value - 600
+            minut.innerHTML = 10
+        }
+        if(input.value > 660){
+            second.innerHTML =  input.value - 660
+            minut.innerHTML = 11
+        }
+        if(input.value > 720){
+            second.innerHTML =  input.value - 720
+            minut.innerHTML = 12
+        }
+        if(input.value > 780){
+            second.innerHTML =  input.value - 780
+            minut.innerHTML = 13
+        }
+        if(input.value > 840){
+            second.innerHTML =  input.value - 840
+            minut.innerHTML = 14
+        }
+        if(input.value > 900){
+            second.innerHTML =  input.value - 900
+            minut.innerHTML = 15
+        }
+        if(input.value > 960){
+            second.innerHTML =  input.value - 960
+            minut.innerHTML = 16
+        }
+        if(input.value > 1020){
+            second.innerHTML =  input.value - 1020
+            minut.innerHTML = 17
+        }
+        if(input.value > 1080){
+            second.innerHTML =  input.value - 1080
+            minut.innerHTML = 18
+        }
+        if(input.value > 1140){
+            second.innerHTML =  input.value - 1140
+            minut.innerHTML = 19
+        }
+        if(input.value > 1200){
+            second.innerHTML =  input.value - 1200
+            minut.innerHTML = 20
+        }
+        if(input.value > 1260){
+            second.innerHTML =  input.value - 1260
+            minut.innerHTML = 21
+        }
+        if(input.value > 1320){
+            second.innerHTML =  input.value - 1320
+            minut.innerHTML = 22
+        }
+        if(input.value > 1380){
+            second.innerHTML =  input.value - 1380
+            minut.innerHTML = 23
+        }
+        if(input.value > 1440){
+            second.innerHTML =  input.value - 1440
+            minut.innerHTML = 24
+        }
+        if(input.value > 1500){
+            second.innerHTML =  input.value - 1500
+            minut.innerHTML = 25
+        }
+        if(input.value > 1560){
+            second.innerHTML =  input.value - 1560
+            minut.innerHTML = 26
+        }
+        if(input.value > 1620){
+            second.innerHTML =  input.value - 1620
+            minut.innerHTML = 27
+        }
+        if(input.value > 1680){
+            second.innerHTML =  input.value - 1620
+            minut.innerHTML = 28
+        }
+        if(input.value > 1740){
+            second.innerHTML =  input.value - 1740
+            minut.innerHTML = 29
+        }
+        if(input.value > 1800){
+            second.innerHTML =  input.value - 1800
+            minut.innerHTML = 30
+        }
+        if(input.value > 1860){
+            second.innerHTML =  input.value - 1860
+            minut.innerHTML = 31
+        }
+        if(input.value > 1920){
+            second.innerHTML =  input.value - 1920
+            minut.innerHTML = 32
+        }
+        if(input.value > 1980){
+            second.innerHTML =  input.value - 1980
+            minut.innerHTML = 33
+        }
+        if(input.value > 2040){
+            second.innerHTML =  input.value - 2040
+            minut.innerHTML = 34
+        }
+        if(input.value > 2100){
+            second.innerHTML =  input.value - 2100
+            minut.innerHTML = 35
+        }
+        if(input.value > 2160){
+            second.innerHTML =  input.value - 2160
+            minut.innerHTML = 36
+        }
+        if(input.value > 2220){
+            second.innerHTML =  input.value - 2220
+            minut.innerHTML = 37
+        }
+        if(input.value > 2280){
+            second.innerHTML =  input.value - 2280
+            minut.innerHTML = 38
+        }
+        if(input.value > 2340){
+            second.innerHTML =  input.value - 2340
+            minut.innerHTML = 39
+        }
+        if(input.value > 2400){
+            second.innerHTML =  input.value - 2400
+            minut.innerHTML = 40
+        }
+        if(input.value > 2460){
+            second.innerHTML =  input.value - 2460
+            minut.innerHTML = 41
+        }
+        if(input.value > 2520){
+            second.innerHTML =  input.value - 2520
+            minut.innerHTML = 42
+        }
+        if(input.value > 2580){
+            second.innerHTML =  input.value - 2580
+            minut.innerHTML = 43
+        }
+        if(input.value > 2640){
+            second.innerHTML =  input.value - 2640
+            minut.innerHTML = 44
+        }
+        if(input.value > 2700){
+            second.innerHTML =  input.value - 2700
+            minut.innerHTML = 45
+        }
+        if(input.value > 2760){
+            second.innerHTML =  input.value - 2760
+            minut.innerHTML = 46
+        }
+        if(input.value > 2820){
+            second.innerHTML =  input.value - 2820
+            minut.innerHTML = 47
+        }
+        if(input.value > 2880){
+            second.innerHTML =  input.value - 2880
+            minut.innerHTML = 48
+        }
+        if(input.value > 2940){
+            second.innerHTML =  input.value - 2940
+            minut.innerHTML = 49
+        }
+        if(input.value > 3000){
+            second.innerHTML =  input.value - 3000
+            minut.innerHTML = 50
+        }
+        if(input.value > 3060){
+            second.innerHTML =  input.value - 3060
+            minut.innerHTML = 51
+        }
+        if(input.value > 3120){
+            second.innerHTML =  input.value - 3120
+            minut.innerHTML = 52
+        }
+        if(input.value > 3180){
+            second.innerHTML =  input.value - 3180
+            minut.innerHTML = 53
+        }
+        if(input.value > 3240){
+            second.innerHTML =  input.value - 3240
+            minut.innerHTML = 54
+        }
+        if(input.value > 3300){
+            second.innerHTML =  input.value - 3300
+            minut.innerHTML = 55
+        }
+        if(input.value > 3360){
+            second.innerHTML =  input.value - 3360
+            minut.innerHTML = 56
+        }
+        if(input.value > 3420){
+            second.innerHTML =  input.value - 3420
+            minut.innerHTML = 57
+        }
+        if(input.value > 3480){
+            second.innerHTML =  input.value - 3480
+            minut.innerHTML = 58
+        }
+        if(input.value > 3540){
+            second.innerHTML =  input.value - 3540
+            minut.innerHTML = 59
+        }
+        if(input.value > 3600){
+            second.innerHTML =  input.value - 3600
+            minut.innerHTML = 60
+        }
+        return;
+}
+minut.innerHTML = 00
+    </script>
+</body>
+</html>
